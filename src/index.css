@@ -1,3 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    background: #1b1b1b;
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@layer components {
+  .shape {
+    background: hsla(277, 79%, 84%, 1);
+
+    background: radial-gradient(
+      circle,
+      hsla(277, 79%, 84%, 1) 0%,
+      hsla(204, 95%, 77%, 1) 100%
+    );
+
+    background: -moz-radial-gradient(
+      circle,
+      hsla(277, 79%, 84%, 1) 0%,
+      hsla(204, 95%, 77%, 1) 100%
+    );
+
+    background: -webkit-radial-gradient(
+      circle,
+      hsla(277, 79%, 84%, 1) 0%,
+      hsla(204, 95%, 77%, 1) 100%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DDB4F6", endColorstr="#8DD0FC", GradientType=1 );
+
+    border-radius: 100%;
+  }
+}

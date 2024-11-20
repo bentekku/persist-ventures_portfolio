@@ -1,0 +1,73 @@
+{
+  "name": "Bhavya Bansal",
+  "currentPosition": "Chief Technology Officer",
+  "currentCompany": "Persist Ventures",
+  "education": [
+    {
+      "university": "Dr. A.P.J. Abdul Kalam University",
+      "field": "Bachelor of Technology - BTech, Computer Science"
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Chief Technology Officer",
+      "company": "Persist Ventures",
+      "type": "Full-time",
+      "work-type": "Hybrid"
+    },
+    {
+      "role": "Chief Technology Officer",
+      "company": "FacesearchAI",
+      "type": "Full-time",
+      "work-type": "Los Angeles, California, United States - Remote"
+    },
+    {
+      "role": "Full Stack Engineer",
+      "company": "Persist Ventures",
+      "type": "Full-time",
+      "work-type": "Los Angeles, California, United States - Remote"
+    },
+    {
+      "role": "AI Software Developer",
+      "company": "HeyDaw Technologies",
+      "type": "Internship",
+      "work-type": "Hybrid"
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Televerge Communications",
+      "type": "Internship",
+      "work-type": "Remote - Hybrid"
+    }
+  ],
+  "skills": [
+    "Prompt Engineering",
+    "ChatGPT",
+    "Natural Language Processing (NLP)",
+    "Artificial Intelligence (AI)",
+    "Software Development",
+    "Research and Development (R&D)",
+    "Project Management",
+    "Sphinx",
+    "Swagger API",
+    "Kubernetes",
+    "Docker",
+    "REST APIs",
+    "Proof of Concept",
+    "Jenkins",
+    "Azure DevOps",
+    "MongoDB",
+    "Linux",
+    "Data Structures",
+    "Python (Programming Language)",
+    "JSON",
+    "C (Programming Language)",
+    "C++",
+    "Object-Oriented Programming (OOP)",
+    "Data Analysis",
+    "Data Visualization",
+    "Data Science",
+    "Machine Learning",
+    "SQL"
+  ]
+}
