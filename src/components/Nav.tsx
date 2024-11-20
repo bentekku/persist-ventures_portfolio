@@ -1,5 +1,9 @@
 const Nav = () => {
-  return <nav>Nav</nav>;
+  return (
+    <nav>
+      <div>Bhavya Bansal</div>
+    </nav>
+  );
 };
 
 export default Nav;
