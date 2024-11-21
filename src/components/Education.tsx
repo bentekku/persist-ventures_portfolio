@@ -3,6 +3,7 @@ import jsonData from "../../data.json";
 const Education = () => {
   return (
     <section
+      id="education"
       className="h-[32rem] py-10 lg:py-0 lg:h-screen w-full flex flex-col lg:flex-row items-center justify-center relative backdrop-blur-3xl space-y-6 lg:space-y-0"
       aria-labelledby="education-heading" // Adding ARIA label to the section
     >

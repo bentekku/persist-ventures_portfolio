@@ -3,8 +3,17 @@ import { HiBars2 } from "react-icons/hi2";
 import jsonData from "../../data.json";
 
 const Nav = () => {
-  // Optional sidebar state (for later implementation)
+  // Sidebar state
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
+
+  // Function to handle scrolling to a specific section
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsSideBarOpen(false); // Close the sidebar
+    }
+  };
 
   return (
     <nav
@@ -36,34 +45,30 @@ const Nav = () => {
             &times;
           </button>
           <div className="flex flex-col items-center justify-center space-y-8 mt-16 font-content">
-            <a
-              href="#hero"
+            <button
               className="text-white text-xl"
-              onClick={() => setIsSideBarOpen(false)}
+              onClick={() => scrollToSection("hero")}
             >
               Home
-            </a>
-            <a
-              href="#experiences"
+            </button>
+            <button
               className="text-white text-xl"
-              onClick={() => setIsSideBarOpen(false)}
+              onClick={() => scrollToSection("experiences")}
             >
               Experiences
-            </a>
-            <a
-              href="#education"
+            </button>
+            <button
               className="text-white text-xl"
-              onClick={() => setIsSideBarOpen(false)}
+              onClick={() => scrollToSection("education")}
             >
               Education
-            </a>
-            <a
-              href="#skills"
+            </button>
+            <button
               className="text-white text-xl"
-              onClick={() => setIsSideBarOpen(false)}
+              onClick={() => scrollToSection("skills")}
             >
               Skills
-            </a>
+            </button>
           </div>
         </div>
       )}

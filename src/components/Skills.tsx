@@ -3,6 +3,7 @@ import jsonData from "../../data.json";
 const Skills = () => {
   return (
     <section
+      id="skills"
       role="region"
       aria-labelledby="skills-heading"
       className="min-h-screen w-full flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:space-x-32 space-y-6 lg:space-y-0"
