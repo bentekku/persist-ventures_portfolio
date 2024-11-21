@@ -4,11 +4,11 @@ const Experiences = () => {
   return (
     <section
       aria-labelledby="experiences-heading"
-      className="h-screen w-full flex flex-col lg:flex-row items-center justify-around space-x-32 py-3 px-8"
+      className="h-screen w-full flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:space-x-32 py-1 px-3 lg:py-3 lg:px-8 space-y-6 lg:space-y-0"
     >
       {/* Rotated Title */}
       <div
-        className="lg:-rotate-90 lg:text-left text-center"
+        className="lg:-rotate-90 lg:text-left text-center space-y-1"
         aria-hidden="true" // Hide for screen readers as it's decorative
       >
         <p
@@ -17,22 +17,22 @@ const Experiences = () => {
         >
           Experiences
         </p>
-        <div className="h-[2px] w-full bg-white/10 mt-2"></div>
+        <div className="h-[1px] w-full bg-white/10"></div>
       </div>
 
       {/* Experiences List */}
-      <div className="flex flex-col items-center space-y-8 font-content w-full max-w-3xl">
-        <ul className="space-y-4 list-disc list-outside">
+      <div className="flex items-center justify-center space-y-0 space-x-0 lg:space-y-8 font-content w-full lg:max-w-4xl">
+        <ul className="space-y-4 lg:space-y-8 w-full flex flex-col items-center justify-center">
           {jsonData.experiences.map((item, indx) => (
             <li
               key={indx}
-              className="text-md sm:text-xl text-center sm:text-left text-gray-300 self-start sm:self-auto"
+              className="text-center sm:text-left text-gray-300 self-start sm:self-auto w-full max-w-full"
             >
-              <p>
-                <span className="font-semibold text-white">
+              <p className="text-md">
+                <span className="font-semibold text-white/90 text-md lg:text-base font-heading">
                   {item.role} @ {item.company}
                 </span>
-                <span className="font-light text-gray-500">
+                <span className="text-white/60 text-sm">
                   {" | "}
                   {item.type} | {item["work-type"]}
                 </span>

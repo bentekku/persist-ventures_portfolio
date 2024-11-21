@@ -8,7 +8,7 @@ const Nav = () => {
 
   return (
     <nav
-      className="flex justify-between items-center py-4 px-8"
+      className="flex justify-between items-center py-4 px-6"
       id="nav"
       aria-label="Main navigation"
     >
@@ -27,21 +27,21 @@ const Nav = () => {
 
       {/* Mobile menu - Show only on small screens */}
       {isSideBarOpen && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex justify-end items-start p-4">
+        <div className="fixed inset-0 bg-black/[98%] z-50 flex justify-center items-center p-4">
           <button
             aria-label="Close navigation menu"
-            className="text-white text-3xl"
+            className="text-white text-7xl absolute top-0 right-[3rem]"
             onClick={() => setIsSideBarOpen(false)}
           >
             &times;
           </button>
-          <div className="flex flex-col items-center justify-center space-y-8 mt-16">
+          <div className="flex flex-col items-center justify-center space-y-8 mt-16 font-content">
             <a
               href="#hero"
               className="text-white text-xl"
               onClick={() => setIsSideBarOpen(false)}
             >
-              Hero
+              Home
             </a>
             <a
               href="#experiences"

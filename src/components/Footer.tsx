@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer
-      className="text-gray-300 flex flex-col items-center justify-center space-y-3 py-4"
+      className="text-gray-300 flex flex-col items-center justify-center space-y-3 py-4 mt-8 lg:mt-0"
       aria-labelledby="footer-text"
     >
       <p

@@ -5,20 +5,27 @@ const Skills = () => {
     <section
       role="region"
       aria-labelledby="skills-heading"
-      className="min-h-screen w-full flex flex-col lg:flex-row items-center justify-around lg:space-x-32 space-y-8 lg:space-y-0"
+      className="min-h-screen w-full flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:space-x-32 space-y-6 lg:space-y-0"
     >
-      <div className="lg:-rotate-90">
-        <h2 id="skills-heading" className="text-2xl" aria-hidden="true">
+      <div className="lg:-rotate-90 space-y-1">
+        <h2
+          id="skills-heading"
+          className="text-2xl lg:text-3xl"
+          aria-hidden="true"
+        >
           Skills
         </h2>
         <p className="sr-only">Skills</p>
-        <div className="h-[2px] w-full bg-white/10 mt-2"></div>
+        <div className="h-[1px] w-full bg-white/10"></div>
       </div>
 
       <div className="flex flex-col justify-center items-center w-full max-w-4xl">
-        <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4 gap-x-8 max-w-full h-auto font-content text-md text-white font-light list-disc break-words p-4">
+        <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4 gap-x-8 max-w-full h-auto font-content text-md text-white font-light lg:list-disc lg:list-outside break-words p-4 text-center">
           {jsonData.skills.map((item, index) => (
-            <li key={index} className="text-sm text-gray-200">
+            <li
+              key={index}
+              className="text-sm lg:text-md text-gray-200 border border-white/5 lg:border-none self-center p-1 rounded-lg lg:hover:underline lg:hover:underline-offset-8"
+            >
               {item}
             </li>
           ))}
