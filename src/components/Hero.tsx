@@ -1,7 +1,9 @@
+import jsonData from "../../data.json";
+
 const Hero = () => {
   return (
     <section
-      className="h-screen w-full flex flex-col items-center justify-around relative"
+      className="w-full flex flex-col items-center justify-center lg:justify-around relative lg:scroll-snap-y lg:scroll-snap-mandatory overflow-y-auto h-screen"
       id="hero"
       aria-labelledby="hero-heading"
     >
@@ -17,22 +19,21 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div
-        className="w-full h-screen flex flex-col items-center justify-center backdrop-blur-3xl px-8 py-4"
+        className="w-full h-full flex flex-col items-center justify-center backdrop-blur-3xl px-8 py-4 space-y-6 lg:space-y-8 snap-start"
         aria-describedby="hero-description"
       >
-        <div
-          className="text-white/50 font-thin text-xl sm:text-lg"
+        <h1
+          className="text-white/60 font-thin text-xl lg:text-4xl underline underline-offset-4 lg:underline-offset-8 text-left"
           id="hero-description"
         >
-          Design & Development
-        </div>
-        <h1
-          id="hero-heading"
-          className="text-3xl font-content mt-2 text-white sm:text-2xl"
-        >
-          If code is <span className="text-red-500/[76%]">Art</span> - <br />{" "}
-          then we all are <span className="text-yellow-500/[60%]">Dante</span>.
+          {jsonData.name}
         </h1>
+        <h2
+          id="hero-heading"
+          className="font-content mt-2 text-white text-sm text-center lg:max-w-3xl lg:text-xl lg:leading-10 lg:tracking-widest leading-6 tracking-wide"
+        >
+          {jsonData.summary}
+        </h2>
       </div>
     </section>
   );

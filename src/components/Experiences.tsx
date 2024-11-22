@@ -5,11 +5,11 @@ const Experiences = () => {
     <section
       id="experiences"
       aria-labelledby="experiences-heading"
-      className="h-screen w-full flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:space-x-32 py-1 px-3 lg:py-3 lg:px-8 space-y-6 lg:space-y-0"
+      className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:space-x-32 py-1 px-3 lg:py-3 lg:px-8 space-y-6 lg:space-y-0 lg:scroll-snap-y lg:scroll-snap-mandatory overflow-y-auto h-screen"
     >
       {/* Rotated Title */}
       <div
-        className="lg:-rotate-90 lg:text-left text-center space-y-1"
+        className="lg:-rotate-90 lg:text-left text-center space-y-1 snap-start"
         aria-hidden="true" // Hide for screen readers as it's decorative
       >
         <p
