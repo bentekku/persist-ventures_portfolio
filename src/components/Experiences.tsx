@@ -11,7 +11,7 @@ const Experiences = () => {
       {/* Rotated Title */}
       <motion.div
         className="lg:-rotate-90 lg:text-left text-center space-y-1 snap-start"
-        aria-hidden="true" // Hide for screen readers as it's decorative
+        aria-hidden="true"
       >
         <motion.h2
           initial={{ opacity: 0, x: "-25vh" }}

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { HiBars2 } from "react-icons/hi2";
 import jsonData from "../../data.json";
 
+// { cursorPosition, lastKnownPosition }: any
 const Nav = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(false);

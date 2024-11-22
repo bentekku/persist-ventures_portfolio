@@ -9,22 +9,12 @@ const Hero = () => {
       id="hero"
       aria-labelledby="hero-heading"
     >
-      {/* Decorative Shapes */}
-      <div
-        className="shape absolute top-34 right-40 h-44 w-44 z-2 lg:right-40 md:right-24 sm:right-10 sm:h-32 sm:w-32"
-        aria-hidden="true"
-      ></div>
-      <div
-        className="absolute top-[50%] right-64 h-44 w-44 !bg-red-500 z-1 lg:right-64 md:right-40 sm:right-20 sm:h-32 sm:w-32"
-        aria-hidden="true"
-      ></div>
-
       {/* Hero Content */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.1 }}
-        style={{ backdropFilter: "blur(3rem)" }} // Ensure blur is applied immediately
+        style={{ backdropFilter: "blur(3rem)" }}
         className="w-full h-full flex flex-col items-center justify-center backdrop-blur-3xl px-8 py-4 space-y-6 lg:space-y-8 snap-start"
         aria-describedby="hero-description"
       >
@@ -71,7 +61,10 @@ const Hero = () => {
             key={item.name}
           >
             <a href={item.link} target="_blank">
-              <CiLinkedin size={34} />
+              <CiLinkedin
+                size={34}
+                className="text-white/40 hover:text-white/90 hover:scale-110 transition-all duration-100 delay-75"
+              />
             </a>
           </motion.button>
         ))}

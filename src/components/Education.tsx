@@ -6,12 +6,12 @@ const Education = () => {
     <section
       id="education"
       className="h-[32rem] py-10 lg:py-0 lg:h-screen w-full flex flex-col lg:flex-row items-center justify-center relative backdrop-blur-3xl space-y-6 lg:space-y-0 lg:scroll-snap-y lg:scroll-snap-mandatory overflow-y-auto"
-      aria-labelledby="education-heading" // Adding ARIA label to the section
+      aria-labelledby="education-heading"
     >
       {/* Rotated Title */}
       <motion.div
         className="flex flex-col items-center space-y-1 lg:-rotate-90 snap-start"
-        aria-hidden="true" // Hide from screen readers since it's decorative
+        aria-hidden="true"
       >
         <motion.h2
           initial={{ opacity: 0, x: "-25vh" }}
@@ -35,8 +35,8 @@ const Education = () => {
       {/* Education List */}
       <div className="flex flex-col justify-center items-center w-full max-w-4xl h-fit lg:h-full text-sm">
         <ul
-          role="list" // Explicitly defining the role of the list for screen readers
-          className="grid grid-cols-1 gap-y-12 gap-x-16 !list-disc !list-outside\"
+          role="list"
+          className="grid grid-cols-1 gap-y-12 gap-x-16 !list-disc !list-outside"
         >
           {jsonData.education.map((item, index) => {
             const dynamicDelay = 0.2 + (index + 2) / 10;
