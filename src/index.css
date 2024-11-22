@@ -20,6 +20,8 @@
 
 @layer components {
   .shape {
+    animation: none !important;
+    transition: none !important;
     background: hsla(277, 79%, 84%, 1);
 
     background: radial-gradient(
