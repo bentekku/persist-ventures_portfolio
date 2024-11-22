@@ -11,7 +11,7 @@ const Skills = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.4 + 0.05 * indx,
+        delay: 0.2 + 0.05 * indx,
       },
     }),
   };
