@@ -1,42 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
+/* Tailwind CSS Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Global Styling */
 html,
 body,
 #root {
   width: 100%;
   height: 100%;
-  overflow: visible; /* Prevent clipping */
+  overflow: visible; /* Ensure the cursor shape isn't clipped */
 }
 
 main,
 section,
 div {
-  overflow: visible !important; /* Ensure the shape is not clipped */
+  overflow: visible !important; /* Allow the shape to flow across components */
 }
 
+/* Base Layer (for foundational styles) */
 @layer base {
   html {
-    scroll-behavior: smooth;
-  }
-  body {
-    background: #1b1b1b;
-    color: #fff;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
   }
 
+  body {
+    background: #1b1b1b; /* Dark background color */
+    color: #fff; /* Default text color */
+  }
+
+  /* Hide scrollbars */
   ::-webkit-scrollbar {
     width: 0;
   }
+
+  /* Provide fallback for non-WebKit browsers */
+  ::-moz-scrollbar {
+    display: none;
+  }
 }
 
+/* Custom Utilities */
 .bg-gradient-custom {
   background: radial-gradient(
     circle,
     rgba(80, 160, 160, 0.8) 0%,
-    rgba(100, 70, 150, 0.6) 70%,
-    rgba(27, 27, 62, 0.4) 100%
+    /* Light teal */ rgba(100, 70, 150, 0.6) 70%,
+    /* Muted purple */ rgba(27, 27, 62, 0.4) 100% /* Dark bluish-gray */
   );
 }
